@@ -6,46 +6,70 @@ public class characterScript : MonoBehaviour
 {
     private CharacterController controller;
     public float speed = 6f;
-
     private float turnTime = 0.05f;
     private float turnVelocity;
 
     public Transform cam;
 
-
     public Transform groundTrans;
     private float groundRadius = 0.1f;
     public LayerMask whatIsGround;
-
     public float jumpPower = 10f;
     private float gravity = 18f;
     private float velocity = 0f;
 
+    private Vector3 dir = Vector3.zero;
+    public bool isInFocus = false;
+
+
+
+    public enum weapon{
+        Gun,
+        Grenade
+    }
+    public weapon[] weapons = new weapon[2];
+    private int currentWeapon = 0;
+    public GameObject bullet;
+    public GameObject grenade;
+    public Transform shootPoint;
+
+    private int maxHp = 100;
+    public int currentHp;
+    private Vector3 impact = Vector3.zero;
+
+
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
+        currentHp = maxHp;
     }
+
 
 
     void Update()
     {
-        //get movement input
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        if(isInFocus){
+            //get movement input
+            float h = Input.GetAxisRaw("Horizontal");
+            float v = Input.GetAxisRaw("Vertical");
 
-        Vector3 dir = new Vector3(h, 0f, v).normalized;
+            dir = new Vector3(h, 0f, v).normalized;
 
-        //movement
-        if(dir.magnitude >= 0.1f){
-            //turn player with movement
-            float newAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float tempAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, newAngle, ref turnVelocity, turnTime);
-            transform.rotation = Quaternion.Euler(0f, tempAngle, 0f);
+            //movement
+            if(dir.magnitude >= 0.1f){
+                //turn player with movement
+                float newAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+                float tempAngle = Mathf.SmoothDampAngle(transform.eulerAngles.y, newAngle, ref turnVelocity, turnTime);
+                transform.rotation = Quaternion.Euler(0f, tempAngle, 0f);
 
-            //adjust the movement to adhere to which way the camera is pointing
-            Vector3 moveDir = Quaternion.Euler(0f, newAngle, 0f) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+                //adjust the movement to which way the camera is pointing
+                Vector3 moveDir = Quaternion.Euler(0f, newAngle, 0f) * Vector3.forward;
+                controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            }
         }
+
+
 
 
 
@@ -58,15 +82,56 @@ public class characterScript : MonoBehaviour
         if(IsGrounded() && canResetVelocity){
             velocity = -(gravity / 2);
             
-            if(Input.GetButtonDown("Jump")){
+            if(isInFocus && Input.GetButtonDown("Jump")){
                 velocity = jumpPower;
 
                 canResetVelocity = false;
-                StartCoroutine(velocityTimer()); //resetting the velocity is set on a timer after jumping to allow jumping on slopes without the chance of the character getting caught on the ground
+                StartCoroutine(VelocityTimer()); //resetting the velocity is set on a timer after jumping to allow jumping on steep slopes without the chance of the character getting caught on the ground
             }
         }
         
         controller.Move(new Vector3(0f, velocity, 0f) * Time.deltaTime);
+
+
+
+        //changing weapon
+        if(isInFocus){
+            if(Input.GetKeyDown(KeyCode.Alpha1)){
+                currentWeapon = 0;
+            }else if(Input.GetKeyDown(KeyCode.Alpha2)){
+                currentWeapon = 1;
+            }
+        }
+
+        //using weapon
+        if(isInFocus && Input.GetMouseButtonDown(0)){
+            //turn character towards the direction the camera is pointing
+            float newAngle = Mathf.Atan2(dir.x, dir.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+            transform.rotation = Quaternion.Euler(0f, newAngle, 0f);
+
+            //use weapon
+            switch (weapons[currentWeapon]){
+                case weapon.Gun:
+                GameObject tempBullet = Instantiate(bullet, shootPoint.position, cam.rotation);
+                tempBullet.GetComponent<bulletScript>().shooter = this.gameObject;
+                break;
+
+                case weapon.Grenade:
+                Instantiate(grenade, shootPoint.position, cam.rotation);
+                break;
+
+                default:
+                break;
+            }
+        }
+
+
+
+        //throw the character
+        if(impact.magnitude > 0.1f){
+            controller.Move(impact * Time.deltaTime);
+            impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+        }
 
     }
 
@@ -80,10 +145,31 @@ public class characterScript : MonoBehaviour
 
 
     private bool canResetVelocity = true;
-    private IEnumerator velocityTimer(){
+    private IEnumerator VelocityTimer(){
         yield return new WaitForSeconds(0.1f);
         canResetVelocity = true;
     }
+
+
+
+    public void TakeDamage(int dmg){
+        currentHp -= dmg;
+        if(currentHp <= 0){
+            Debug.Log("die");
+        }
+    }
+
+
+
+    public void Knockback(Vector3 forceSource, float force){
+        //get direction to throw character in (away from source of knockback)
+        Vector3 dir = (transform.position - forceSource).normalized;
+
+        impact = dir * force;
+        impact = new Vector3(impact.x, impact.y * (force / 2), impact.z);
+    }
+
+
 
 
 
