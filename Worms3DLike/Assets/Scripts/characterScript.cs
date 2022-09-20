@@ -74,7 +74,14 @@ public class characterScript : MonoBehaviour
 
 
         //jumping and gravity
-        velocity -= gravity * Time.deltaTime;
+        if(isInFocus){
+            velocity -= gravity * Time.deltaTime;
+        }
+        else{
+            velocity -= (gravity / 2) * Time.deltaTime;
+        }
+
+        
 
         //clamp velocity so it doesn't infinitely increase your speed while falling
         velocity = Mathf.Clamp(velocity, -50, Mathf.Infinity);
