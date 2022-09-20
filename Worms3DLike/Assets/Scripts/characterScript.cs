@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class characterScript : MonoBehaviour
 {
+
     private CharacterController controller;
     public float speed = 6f;
     private float turnTime = 0.05f;
     private float turnVelocity;
 
-    public Transform cam;
+    private Transform cam;
 
     public Transform groundTrans;
     private float groundRadius = 0.1f;
@@ -43,6 +44,8 @@ public class characterScript : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         currentHp = maxHp;
+
+        cam = GameObject.Find("Main Camera").transform;
     }
 
 
@@ -74,14 +77,7 @@ public class characterScript : MonoBehaviour
 
 
         //jumping and gravity
-        if(isInFocus){
-            velocity -= gravity * Time.deltaTime;
-        }
-        else{
-            velocity -= (gravity / 2) * Time.deltaTime;
-        }
-
-        
+        velocity -= gravity * Time.deltaTime;
 
         //clamp velocity so it doesn't infinitely increase your speed while falling
         velocity = Mathf.Clamp(velocity, -50, Mathf.Infinity);
@@ -93,11 +89,11 @@ public class characterScript : MonoBehaviour
                 velocity = jumpPower;
 
                 canResetVelocity = false;
-                StartCoroutine(VelocityTimer()); //resetting the velocity is set on a timer after jumping to allow jumping on steep slopes without the chance of the character getting caught on the ground
+                StartCoroutine(VelocityTimer()); //resetting the velocity is set on a timer after jumping to allow jumping on steep slopes without the chance of the character getting caught on the ground (because velocity gets reset on touching ground)
             }
         }
         
-        controller.Move(new Vector3(0f, velocity, 0f) * Time.deltaTime);
+        controller.Move(new Vector3(0f, velocity, 0f) * Time.deltaTime); //velocity (and gravity) is applied even when the character isn't in focus incase of knockback
 
 
 
@@ -173,7 +169,7 @@ public class characterScript : MonoBehaviour
         Vector3 dir = (transform.position - forceSource).normalized;
 
         impact = dir * force;
-        impact = new Vector3(impact.x, impact.y * (force / 2), impact.z);
+        impact = new Vector3(impact.x, impact.y * (force / 2), impact.z); //increase the knockback upwards for effect
     }
 
 
