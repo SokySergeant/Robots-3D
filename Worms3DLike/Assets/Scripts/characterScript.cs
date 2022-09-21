@@ -78,7 +78,6 @@ public class characterScript : MonoBehaviour
 
         //jumping and gravity
         velocity -= gravity * Time.deltaTime;
-
         //clamp velocity so it doesn't infinitely increase your speed while falling
         velocity = Mathf.Clamp(velocity, -50, Mathf.Infinity);
 
