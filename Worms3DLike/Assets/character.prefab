@@ -430,6 +430,7 @@ MonoBehaviour:
     m_Bits: 4096
   jumpPower: 10
   isInFocus: 0
+  isDead: 0
   weapons: 0000000001000000
   bullet: {fileID: 4283459531035988104, guid: ba4bda04311e9d843a0bc759f84d01ae, type: 3}
   grenade: {fileID: 8117924447958374426, guid: d14d5aae7b442894bb7df10cf0d933c0, type: 3}

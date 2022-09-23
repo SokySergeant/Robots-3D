@@ -21,6 +21,7 @@ public class characterScript : MonoBehaviour
 
     private Vector3 dir = Vector3.zero;
     public bool isInFocus = false;
+    public bool isDead = false;
 
 
 
@@ -155,9 +156,16 @@ public class characterScript : MonoBehaviour
 
 
     public void TakeDamage(int dmg){
-        currentHp -= dmg;
-        if(currentHp <= 0){
-            Debug.Log("die");
+        if(!isDead){
+            currentHp -= dmg;
+            if(currentHp <= 0){
+                isInFocus = false;
+                isDead = true;
+
+                //visuals
+                transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 90);
+                controller.height = 0f;
+            }
         }
     }
 
