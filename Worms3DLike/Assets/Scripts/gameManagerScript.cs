@@ -28,6 +28,7 @@ public class gameManagerScript : MonoBehaviour
     public GameObject mainMenuObj;
     public TextMeshProUGUI teamText;
     public TextMeshProUGUI errorText;
+    public GameObject backToMenuBtn;
 
     public Image characterIcon;
     private Image[] icons;
@@ -50,7 +51,7 @@ public class gameManagerScript : MonoBehaviour
 
     void Update()
     {
-
+        //switching team
         if(Input.GetKeyDown(KeyCode.F) && canSwitchTeam && !doCharChoosing){
             canSwitchTeam = false;
             SwitchTeam();
@@ -59,6 +60,7 @@ public class gameManagerScript : MonoBehaviour
 
         //choosing character
         if(doCharChoosing){
+            //cycle through characters
             if(Input.GetKeyDown(KeyCode.LeftArrow)){
                 icons[currentChosenCharIndex].sprite = iconImg;
 
@@ -160,12 +162,13 @@ public class gameManagerScript : MonoBehaviour
         }
 
 
-        
         canSwitchTeam = true;
     }
 
 
 
+    //0: character Camera
+    //1: map Camera
     private void SwitchCamera(int camNr){
         if(camNr == 0){
             characterCam.m_Priority = 11;
@@ -223,6 +226,9 @@ public class gameManagerScript : MonoBehaviour
 
                 SwitchTeam();
 
+                //check if there is only one team left standing whenever a character dies
+                characterScript.onDeath += CheckIfWin;
+
                 //exit function
                 return;
             }
@@ -235,10 +241,76 @@ public class gameManagerScript : MonoBehaviour
 
 
     public void EndGame(){
-        Cursor.lockState = CursorLockMode.None;
+        //delete old characters
+        for (int i = 0; i < teams.Length; i++){
+            for (int j = 0; j < teams[i].Length; j++){
+                Destroy(teams[i][j]);
+            }
+        }
+
+        currentTeam = 0;
+        teamText.text = "";
 
         //show main menu options
+        backToMenuBtn.SetActive(false);
         mainMenuObj.SetActive(true);
+    }
+
+
+
+    private void CheckIfWin(){
+
+        int liveTeams = 0;
+
+        for (int i = 0; i < teams.Length; i++){
+
+            int liveChars = 0;
+            //check if any of this teams characters are alive
+            for (int j = 0; j < teams[i].Length; j++){
+                if(!(teams[i][j].GetComponent<characterScript>().isDead)){
+                    liveChars++;
+                }
+            }
+
+            //if at least one character is alive, the team is live
+            if(liveChars > 0){
+                liveTeams++;
+            }
+
+        }
+
+        //if there is one or less teams live, win
+        if(liveTeams <= 1){
+
+            int liveTeamInd = -1;
+
+            //find the last living team
+            for (int i = 0; i < teams.Length; i++){
+                for (int j = 0; j < teams[i].Length; j++){
+                    if(!(teams[i][j].GetComponent<characterScript>().isDead)){ //the last living team must have at least one live character
+                        liveTeamInd = i;
+                        break;
+                    }
+                }
+            }
+
+            canSwitchTeam = false;
+            SwitchCamera(1);
+
+            //if the live team index stays at -1, it means all the teams are dead, meaning its a tie
+            if(liveTeamInd == -1){
+                teamText.text = "Tie!";
+            }else{
+                teamText.text = "Team " + (liveTeamInd + 1) + " won!";
+            }
+
+            Cursor.lockState = CursorLockMode.None;
+            backToMenuBtn.SetActive(true);
+            
+        }
+
+
+        
     }
 
 

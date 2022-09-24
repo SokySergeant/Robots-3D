@@ -39,6 +39,9 @@ public class characterScript : MonoBehaviour
     public int currentHp;
     private Vector3 impact = Vector3.zero;
 
+    public delegate void OnDeath();
+    public static event OnDeath onDeath;
+
 
 
     void Start()
@@ -165,6 +168,8 @@ public class characterScript : MonoBehaviour
                 //visuals
                 transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, transform.eulerAngles.z - 90);
                 controller.height = 0f;
+
+                onDeath?.Invoke();
             }
         }
     }
