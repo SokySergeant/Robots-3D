@@ -10,7 +10,7 @@ public class bulletScript : MonoBehaviour
     private Vector3 startPos;
     private float range = 50f;
 
-    private int dmg = 20;
+    private float dmg = 20;
 
     // Start is called before the first frame update
     void Start()

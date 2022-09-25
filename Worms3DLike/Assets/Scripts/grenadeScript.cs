@@ -7,9 +7,9 @@ public class grenadeScript : MonoBehaviour
     private Rigidbody body;
     public float throwForce = 300f;
 
-    public float blowRadius = 3f;
-    public float blowForce = 10f;
-    public int blowDmg = 40;
+    private float blowRadius = 3f;
+    private float blowForce = 10f;
+    private float blowDmg = 40f;
 
     public LayerMask whatIsCharacter;
 

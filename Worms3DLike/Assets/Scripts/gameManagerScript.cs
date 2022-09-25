@@ -7,7 +7,7 @@ using TMPro;
 
 public class gameManagerScript : MonoBehaviour
 {
-
+    //team
     public int amountOfTeams = 2;
     private int currentTeam = 0;
     private int charsPerTeam = 3;
@@ -39,6 +39,10 @@ public class gameManagerScript : MonoBehaviour
     private int currentChosenCharIndex;
 
     private bool canSwitchTeam = true;
+
+    //hud 
+    public GameObject hpBar;
+    public GameObject distanceBar;
 
 
 
@@ -93,6 +97,10 @@ public class gameManagerScript : MonoBehaviour
                     Destroy(icons[i].gameObject);
                 }
 
+                //turn on character hud
+                hpBar.SetActive(true);
+                distanceBar.SetActive(true);
+
                 doCharChoosing = false;
             }
         }
@@ -110,6 +118,10 @@ public class gameManagerScript : MonoBehaviour
         if(currentTeam >= amountOfTeams){
             currentTeam = 0;
         }
+
+        //turn off character hud
+        hpBar.SetActive(false);
+        distanceBar.SetActive(false);
 
         //stop current player movement
         FocusOnChar(null);
@@ -183,12 +195,15 @@ public class gameManagerScript : MonoBehaviour
 
     private void FocusOnChar(GameObject newChar){
         if(currentChar != null){
-            currentChar.GetComponent<characterScript>().isInFocus = false;
+            currentChar.GetComponent<characterScript>().SetFocus(false);
         }
 
         if(newChar != null){
             currentChar = newChar;
-            newChar.GetComponent<characterScript>().isInFocus = true;
+        
+            newChar.GetComponent<characterScript>().SetFocus(true);
+
+            //move camera to new character
             characterCam.m_Follow = newChar.transform;
             characterCam.m_LookAt = newChar.transform;
         }
@@ -218,6 +233,11 @@ public class gameManagerScript : MonoBehaviour
                         //spawn the character at a random position around the teams spawnpoint
                         Vector3 offset = new Vector3(Random.Range(spawnPoints[i].position.x - offsetRange, spawnPoints[i].position.x + offsetRange), spawnPoints[i].position.y, Random.Range(spawnPoints[i].position.z - offsetRange, spawnPoints[i].position.z + offsetRange));
                         teams[i][j] = Instantiate(character, offset, Quaternion.identity);
+
+                        //give character hud elements
+                        teams[i][j].GetComponent<characterScript>().canvas = this.canvas;
+                        teams[i][j].GetComponent<characterScript>().hpBar = this.hpBar;
+                        teams[i][j].GetComponent<characterScript>().distanceBar = this.distanceBar;
                     }
                 }
 
@@ -297,12 +317,19 @@ public class gameManagerScript : MonoBehaviour
             canSwitchTeam = false;
             SwitchCamera(1);
 
+            //stop current character
+            currentChar.GetComponent<characterScript>().SetFocus(false);
+
             //if the live team index stays at -1, it means all the teams are dead, meaning its a tie
             if(liveTeamInd == -1){
                 teamText.text = "Tie!";
             }else{
                 teamText.text = "Team " + (liveTeamInd + 1) + " won!";
             }
+
+            //turn off character hud elements
+            hpBar.SetActive(false);
+            distanceBar.SetActive(false);
 
             Cursor.lockState = CursorLockMode.None;
             backToMenuBtn.SetActive(true);
