@@ -362,6 +362,7 @@
 "Assets/Scripts/characterScript.cs"
 "Assets/Scripts/gameManagerScript.cs"
 "Assets/Scripts/grenadeScript.cs"
+"Assets/Scripts/hazardScript.cs"
 "Assets/Scripts/scrollTextureScript.cs"
 "Assets/Scripts/spinObjScript.cs"
 -langversion:9.0

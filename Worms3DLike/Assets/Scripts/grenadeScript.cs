@@ -10,12 +10,16 @@ public class grenadeScript : MonoBehaviour
     private float blowRadius = 3f;
     private float blowForce = 10f;
     private float blowDmg = 40f;
+    private ParticleSystem explosionParticles;
 
     public LayerMask whatIsCharacter;
 
 
     void Start()
     {
+        explosionParticles = GetComponentInChildren<ParticleSystem>();
+        explosionParticles.Stop();
+
         body = GetComponent<Rigidbody>();
         body.AddRelativeForce(Vector3.forward * throwForce);
 
@@ -28,6 +32,13 @@ public class grenadeScript : MonoBehaviour
 
         yield return new WaitForSeconds(3f);
 
+        //turn on explosion particles
+        explosionParticles.Play();
+
+        //stop rigidbody from moving and rotate it to point straight
+        body.isKinematic = true;
+        body.transform.rotation = Quaternion.identity;
+
         //get all characters within radius
         Collider[] characterHits = Physics.OverlapSphere(transform.position, blowRadius, whatIsCharacter);
 
@@ -37,7 +48,11 @@ public class grenadeScript : MonoBehaviour
             characterHits[i].GetComponent<characterScript>().TakeDamage(blowDmg);
         }
 
+        yield return new WaitForSeconds(1f);
+
         Destroy(gameObject);
     }
+
+
 
 }

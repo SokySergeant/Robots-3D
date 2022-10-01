@@ -7,7 +7,7 @@ using TMPro;
 
 public class gameManagerScript : MonoBehaviour
 {
-    //team
+    //teams
     public int amountOfTeams = 2;
     private int currentTeam = 0;
     private int charsPerTeam = 3;
@@ -16,31 +16,37 @@ public class gameManagerScript : MonoBehaviour
 
     private GameObject[][] teams;
     public Transform[] spawnPoints;
-    private GameObject currentChar = null;
 
+    //character
+    private GameObject currentChar = null;
     public GameObject character;
 
+    //cameras
     public Camera mainCam;
     public CinemachineFreeLook characterCam;
     public CinemachineVirtualCamera mapCam;
 
+    //UI 
     public Canvas canvas;
     public GameObject mainMenuObj;
     public TextMeshProUGUI teamText;
     public TextMeshProUGUI errorText;
     public GameObject backToMenuBtn;
+    public TextMeshProUGUI controlsText;
 
+    //character icons
     public Image characterIcon;
     private Image[] icons;
     public Sprite iconImg;
     public Sprite chosenIconImg;
+    private Color[] teamColors;
 
     private bool doCharChoosing = false;
     private int currentChosenCharIndex;
 
     private bool canSwitchTeam = true;
 
-    //hud 
+    //character hud 
     public GameObject hpBar;
     public GameObject distanceBar;
 
@@ -60,6 +66,7 @@ public class gameManagerScript : MonoBehaviour
             canSwitchTeam = false;
             SwitchTeam();
         }
+
 
 
         //choosing character
@@ -89,6 +96,7 @@ public class gameManagerScript : MonoBehaviour
 
             //confirming character chosen, if the character isn't dead
             if(Input.GetKeyDown(KeyCode.F) && !teams[currentTeam][currentChosenCharIndex].GetComponent<characterScript>().isDead){
+                //switch focus to chosen character
                 FocusOnChar(teams[currentTeam][currentChosenCharIndex]);
                 SwitchCamera(0);
                 
@@ -100,6 +108,9 @@ public class gameManagerScript : MonoBehaviour
                 //turn on character hud
                 hpBar.SetActive(true);
                 distanceBar.SetActive(true);
+
+                //change controls info
+                controlsText.text = "F: Finish Turn";
 
                 doCharChoosing = false;
             }
@@ -128,6 +139,9 @@ public class gameManagerScript : MonoBehaviour
         //switch to map camera
         SwitchCamera(1);
 
+        //change controls info
+        controlsText.text = "← / →: Cycle\nF: Confirm";
+
 
         int deadChars = 0;
 
@@ -141,11 +155,13 @@ public class gameManagerScript : MonoBehaviour
         //if not all characters on this team are dead
         if(!(deadChars >= charsPerTeam)){
 
-            teamText.text = "Team " + (currentTeam + 1) + "'s turn";
+            //set team info text and color
+            teamText.text = "Team " + (currentTeam + 1) + "'s turn"; //shift team numbers up by one as to not have a Team 0
+            teamText.color = teamColors[currentTeam];
 
             yield return new WaitForSeconds(1f);
 
-            //spawn icons for the teams characters
+            //spawn icons for the team's characters
             icons = new Image[charsPerTeam];
 
             for (int i = 0; i < teams[currentTeam].Length; i++){
@@ -154,12 +170,17 @@ public class gameManagerScript : MonoBehaviour
                 //create icons
                 icons[i] = Instantiate(characterIcon, new Vector3(charPos.x, charPos.y, 0), Quaternion.identity);
 
+                //set icon color to teams color
+                icons[i].color = teamColors[currentTeam];
+
+                //set icon's text to the characters number if they're not dead, otherwise it is X
                 if(teams[currentTeam][i].GetComponent<characterScript>().isDead){
                     icons[i].GetComponentInChildren<TextMeshProUGUI>().text = "X";
                 }else{
                     icons[i].GetComponentInChildren<TextMeshProUGUI>().text = (i + 1).ToString();
                 }
 
+                //make the icon a child of the canvas since it is a UI element
                 icons[i].transform.SetParent(canvas.transform);
             }
 
@@ -219,11 +240,20 @@ public class gameManagerScript : MonoBehaviour
 
         if(int.TryParse(input, out tempAmountOfTeams)){
             if(tempAmountOfTeams >= 2 && tempAmountOfTeams <= 4){
+                //start game 
+
                 amountOfTeams = tempAmountOfTeams;
 
                 Cursor.lockState = CursorLockMode.Locked;
 
                 teams = new GameObject[amountOfTeams][];
+
+                //create random colors for each team
+                teamColors = new Color[amountOfTeams];
+                for (int i = 0; i < teamColors.Length; i++){
+                    //create random bright colors
+                    teamColors[i] = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 1f);
+                }
                 
                 //spawn characters
                 for (int i = 0; i < amountOfTeams; i++){
@@ -320,10 +350,17 @@ public class gameManagerScript : MonoBehaviour
             //stop current character
             currentChar.GetComponent<characterScript>().SetFocus(false);
 
+            //empty control info
+            controlsText.text = "";
+
             //if the live team index stays at -1, it means all the teams are dead, meaning its a tie
             if(liveTeamInd == -1){
+                //set the text's color to white if no team won
+                teamText.color = Color.white;
                 teamText.text = "Tie!";
             }else{
+                //set the text's color to the team that won
+                teamText.color = teamColors[liveTeamInd];
                 teamText.text = "Team " + (liveTeamInd + 1) + " won!";
             }
 

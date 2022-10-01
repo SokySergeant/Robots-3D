@@ -6,7 +6,7 @@ using TMPro;
 
 public class characterScript : MonoBehaviour
 {
-
+    //movement
     private CharacterController controller;
     public float speed = 6f;
     private float turnTime = 0.05f;
@@ -14,7 +14,7 @@ public class characterScript : MonoBehaviour
 
     private Transform cam;
 
-    //movement
+    //jump / gravity
     public Transform groundTrans;
     private float groundRadius = 0.1f;
     public LayerMask whatIsGround;
@@ -119,8 +119,6 @@ public class characterScript : MonoBehaviour
 
 
 
-
-
         //jumping and gravity
         velocity -= gravity * Time.deltaTime;
         //clamp velocity so it doesn't infinitely increase your speed while falling
@@ -182,6 +180,8 @@ public class characterScript : MonoBehaviour
             controller.Move(impact * Time.deltaTime);
             impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
         }
+
+
 
     }
 
@@ -257,8 +257,10 @@ public class characterScript : MonoBehaviour
             weaponIcons = new Image[weapons.Length];
 
             for (int i = 0; i < weapons.Length; i++){
+                //set location, name, and assigned button of weapon icon
                 weaponIcons[i] = Instantiate(weaponIcon, new Vector3(70 + (i * 100), Screen.height - 70, 0), Quaternion.identity);
-                weaponIcons[i].GetComponentInChildren<TextMeshProUGUI>().text = weapons[i].ToString();
+                weaponIcons[i].transform.Find("itemName").GetComponent<TextMeshProUGUI>().text = weapons[i].ToString();
+                weaponIcons[i].transform.Find("itemNr").GetComponent<TextMeshProUGUI>().text = (i + 1).ToString();
                 weaponIcons[i].transform.SetParent(canvas.transform);
             }
 
@@ -291,6 +293,16 @@ public class characterScript : MonoBehaviour
 
         //turn the icon of the selected weapon white
         weaponIcons[currentWeapon].color = Color.white;
+    }
+
+
+
+    //hazards
+    void OnControllerColliderHit(ControllerColliderHit hit){
+        if(hit.gameObject.layer == LayerMask.NameToLayer("Hazard")){
+            //instantly kill the character
+            TakeDamage(maxHp);
+        }
     }
 
 
