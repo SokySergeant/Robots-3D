@@ -61,6 +61,7 @@ public class characterScript : MonoBehaviour
     public Canvas canvas;
     public GameObject hpBar;
     public GameObject distanceBar;
+    public TextMeshProUGUI actionsText;
     public Image weaponIcon;
     private Image[] weaponIcons;
 
@@ -171,6 +172,8 @@ public class characterScript : MonoBehaviour
             }
 
             currentActionAmount--;
+            //update action counter ui
+            actionsText.text = "Actions left:\n" + currentActionAmount;
         }
 
 
@@ -252,6 +255,7 @@ public class characterScript : MonoBehaviour
             //set the hp bar's value to show THIS characters hp
             hpBar.GetComponent<Slider>().value = currentHp / maxHp;
             distanceBar.GetComponent<Slider>().value = 1;
+            actionsText.text = "Actions left:\n" + currentActionAmount;
 
             //create weapon icons
             weaponIcons = new Image[weapons.Length];

@@ -33,6 +33,9 @@ public class gameManagerScript : MonoBehaviour
     public TextMeshProUGUI errorText;
     public GameObject backToMenuBtn;
     public TextMeshProUGUI controlsText;
+    public GameObject hpBar;
+    public GameObject distanceBar;
+    public TextMeshProUGUI actionsText;
 
     //character icons
     public Image characterIcon;
@@ -45,10 +48,7 @@ public class gameManagerScript : MonoBehaviour
     private int currentChosenCharIndex;
 
     private bool canSwitchTeam = true;
-
-    //character hud 
-    public GameObject hpBar;
-    public GameObject distanceBar;
+    
 
 
 
@@ -133,6 +133,7 @@ public class gameManagerScript : MonoBehaviour
         //turn off character hud
         hpBar.SetActive(false);
         distanceBar.SetActive(false);
+        actionsText.text = "";
 
         //stop current player movement
         FocusOnChar(null);
@@ -268,6 +269,7 @@ public class gameManagerScript : MonoBehaviour
                         teams[i][j].GetComponent<characterScript>().canvas = this.canvas;
                         teams[i][j].GetComponent<characterScript>().hpBar = this.hpBar;
                         teams[i][j].GetComponent<characterScript>().distanceBar = this.distanceBar;
+                        teams[i][j].GetComponent<characterScript>().actionsText = this.actionsText;
                     }
                 }
 
@@ -304,6 +306,8 @@ public class gameManagerScript : MonoBehaviour
         //show main menu options
         backToMenuBtn.SetActive(false);
         mainMenuObj.SetActive(true);
+        //reset error message
+        errorText.text = "";
     }
 
 
@@ -350,9 +354,6 @@ public class gameManagerScript : MonoBehaviour
             //stop current character
             currentChar.GetComponent<characterScript>().SetFocus(false);
 
-            //empty control info
-            controlsText.text = "";
-
             //if the live team index stays at -1, it means all the teams are dead, meaning its a tie
             if(liveTeamInd == -1){
                 //set the text's color to white if no team won
@@ -367,7 +368,11 @@ public class gameManagerScript : MonoBehaviour
             //turn off character hud elements
             hpBar.SetActive(false);
             distanceBar.SetActive(false);
+            //empty control info
+            controlsText.text = "";
+            actionsText.text = "";
 
+            //show back to menu button
             Cursor.lockState = CursorLockMode.None;
             backToMenuBtn.SetActive(true);
             
