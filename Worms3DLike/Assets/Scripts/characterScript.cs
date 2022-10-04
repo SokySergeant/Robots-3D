@@ -42,7 +42,7 @@ public class characterScript : MonoBehaviour
 
 
     //turn limitations
-    private int actionAmount = 20;
+    private int actionAmount = 2;
     private int currentActionAmount;
     public float maxRange = 20f;
     public float currentRange = 0f;
