@@ -1,0 +1,537 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1664895626793187, "dur": 3069523, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895626793440, "dur": 6702, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895626800144, "dur": 40483, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895626840629, "dur": 834310, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895627674941, "dur": 2186271, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895629861214, "dur": 1496, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895629863310, "dur": 13, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1664895627438375, "dur": 217519, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627439619, "dur": 58132, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627634983, "dur": 5608, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627640594, "dur": 15282, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627641411, "dur": 13310, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627662302, "dur": 1536, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1664895627661035, "dur": 2831, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895629864718, "dur": 404, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1664895627724306, "dur":2453, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895627726775, "dur":76, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1664895627726870, "dur":22, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1664895627726909, "dur":753, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1664895627727703, "dur":1236, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895627728939, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819734, "dur":116, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819850, "dur":48, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819898, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819903, "dur":29, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819932, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819937, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819947, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819951, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819961, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819964, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819974, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819977, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819987, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629819990, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629820000, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629820003, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629820014, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629820032, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629820190, "dur":2427, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1664895627727983, "dur":1013, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627728999, "dur":5982, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627735002, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1664895627735007, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627737427, "dur":936, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1664895627738367, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1664895627738448, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627738936, "dur":18409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1664895627757347, "dur":177, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1664895627757528, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627763586, "dur":2885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1664895627766540, "dur":102370, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1664895627868915, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895627868928, "dur":10915, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":1, "ts":1664895627879900, "dur":1923242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1664895629803146, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1664895629803153, "dur":16480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":1, "ts":1664895629819675, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":1, "ts":1664895629819677, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627728040, "dur":1027, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627729068, "dur":5976, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627735044, "dur":17107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1664895627752157, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627752429, "dur":2044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1664895627754566, "dur":11994, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1664895627766564, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627766576, "dur":1955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1664895627768588, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1664895627768731, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895627768744, "dur":298053, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1664895628066850, "dur":110917, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628177798, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628177810, "dur":2986, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628180849, "dur":37630, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628218485, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628218496, "dur":3704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628222258, "dur":73467, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628295731, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628295744, "dur":14103, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628309976, "dur":154799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628464781, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628464792, "dur":1292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628466134, "dur":28809, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628494948, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628494959, "dur":8238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628503248, "dur":39421, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628542677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628542691, "dur":1973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628544732, "dur":25403, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628570141, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628570155, "dur":1247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628571454, "dur":41158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628612621, "dur":10, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628612646, "dur":17354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628630055, "dur":170066, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628800127, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628800138, "dur":2276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628802465, "dur":1348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628803819, "dur":7, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628803836, "dur":6385, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628810271, "dur":53143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628863442, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628863456, "dur":3353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628866868, "dur":57816, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628924691, "dur":49, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895628924751, "dur":11886, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895628936689, "dur":127359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629064053, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895629064065, "dur":1477, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629065592, "dur":93136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629158733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895629158771, "dur":1513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629160332, "dur":111799, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629272137, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895629272149, "dur":1347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629273553, "dur":146907, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629420467, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895629420481, "dur":2671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629423203, "dur":191270, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629614477, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1664895629614487, "dur":12380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":2, "ts":1664895629626942, "dur":192775, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627728172, "dur":904, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627729076, "dur":5977, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627735053, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1664895627735225, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627739682, "dur":15869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1664895627755628, "dur":17841, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1664895627773478, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627773496, "dur":3045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":3, "ts":1664895627776594, "dur":92357, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1664895627868955, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627868964, "dur":24788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1664895627893811, "dur":86314, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1664895627980131, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895627980141, "dur":2863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":3, "ts":1664895627983066, "dur":51893, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628034964, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628035265, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628036579, "dur":113409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628149994, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628150006, "dur":2559, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628152626, "dur":141933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628294565, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628294589, "dur":2940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628297583, "dur":159958, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628457547, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628457558, "dur":1812, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628459420, "dur":23596, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628483021, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628483057, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628484392, "dur":43343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628527740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628527749, "dur":15298, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628543102, "dur":40163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628583296, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628583309, "dur":3926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628587287, "dur":24858, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628612151, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628612163, "dur":10042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628622255, "dur":39713, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628662093, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628662105, "dur":3353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628665513, "dur":29279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628694798, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628694809, "dur":1501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628696364, "dur":65781, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628762151, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628762162, "dur":23164, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628785389, "dur":82721, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628868114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628868124, "dur":17139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628885315, "dur":29181, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628914502, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628914515, "dur":9956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628924533, "dur":33746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628958285, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895628958297, "dur":1263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.KdTree.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895628959615, "dur":90625, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629050246, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895629050258, "dur":1226, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629051550, "dur":209344, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629260927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895629260938, "dur":2126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629263116, "dur":168728, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629431852, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895629431864, "dur":2628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629434540, "dur":53512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629488057, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1664895629488092, "dur":11240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":3, "ts":1664895629499381, "dur":320340, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895627728296, "dur":789, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895627729085, "dur":5919, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895627735005, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1664895627735222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895627739382, "dur":16464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1664895627755926, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1664895627756061, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895627756074, "dur":312852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":4, "ts":1664895628068983, "dur":110250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628179239, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628179250, "dur":8305, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628187693, "dur":49095, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628236794, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628236807, "dur":1849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628238707, "dur":92898, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628331610, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628331704, "dur":6663, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628338427, "dur":59857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628398289, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628398301, "dur":1148, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628399505, "dur":36710, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628436220, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628436232, "dur":2446, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628438736, "dur":56288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628495027, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628495034, "dur":8062, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628503146, "dur":25495, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628528645, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628528654, "dur":14734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628543448, "dur":27015, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628570468, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628570478, "dur":3051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628573586, "dur":30400, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628603993, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628604208, "dur":2086, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628606346, "dur":41857, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628648209, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628648222, "dur":14593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628662872, "dur":27884, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628690842, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628690854, "dur":1331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628692237, "dur":26822, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628719091, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628719103, "dur":1326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628720479, "dur":32463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628752948, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628752960, "dur":1436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628754507, "dur":97364, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628851877, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628851888, "dur":14963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628866906, "dur":881, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628867794, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628867808, "dur":17333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628885282, "dur":921, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628886209, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628886222, "dur":1213, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628887503, "dur":918, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628888426, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628888439, "dur":1319, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628889811, "dur":29522, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628919364, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628919376, "dur":5480, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628924918, "dur":46795, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628971719, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895628971732, "dur":1159, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Csg.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895628972946, "dur":152514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629125466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895629125478, "dur":10580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629136112, "dur":38644, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629174764, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895629174776, "dur":1652, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629176478, "dur":42348, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629218832, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895629218844, "dur":4015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629222909, "dur":206387, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629429302, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895629429314, "dur":4529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629433898, "dur":138967, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629572874, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1664895629572891, "dur":1813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":4, "ts":1664895629574743, "dur":244976, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627728448, "dur":644, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627729092, "dur":5903, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627735002, "dur":48478, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1664895627783484, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627783887, "dur":94388, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1664895627878332, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1664895627878478, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627878489, "dur":16116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":5, "ts":1664895627894665, "dur":49480, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike.exe" }}
+,{ "pid":12345, "tid":5, "ts":1664895627944150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895627944159, "dur":6970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike.exe" }}
+,{ "pid":12345, "tid":5, "ts":1664895627951179, "dur":89885, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628041074, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628041199, "dur":2177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628043431, "dur":107659, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628151094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628151103, "dur":3785, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628154939, "dur":78981, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628233926, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628233939, "dur":2178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628236202, "dur":96485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628332694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628332705, "dur":14928, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628347709, "dur":88511, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628436224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628436398, "dur":2399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628438849, "dur":39733, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628478588, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628478600, "dur":2377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628481015, "dur":24700, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628505722, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628505735, "dur":1290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628507092, "dur":48393, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628555491, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628555503, "dur":1436, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628556989, "dur":53388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628610383, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628610395, "dur":11682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628622131, "dur":49503, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628671640, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628671651, "dur":1379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628673084, "dur":55610, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628728700, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628728722, "dur":1833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628730604, "dur":47131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628777767, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895628777779, "dur":10714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895628788540, "dur":326696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629115242, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895629115255, "dur":2752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629118216, "dur":96333, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629214555, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895629214568, "dur":2931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629217604, "dur":266227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629483835, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1664895629483844, "dur":16551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":5, "ts":1664895629500442, "dur":319277, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895627728623, "dur":478, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895627729102, "dur":5941, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895627735043, "dur":2032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1664895627737116, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895627739717, "dur":25444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1664895627765222, "dur":207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1664895627765433, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895627765523, "dur":114105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1664895627879686, "dur":677514, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628557204, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628557271, "dur":9324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628566655, "dur":140406, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628707066, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628707077, "dur":1540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628708667, "dur":51607, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628760279, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628760291, "dur":1218, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628761562, "dur":86407, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628847976, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628847988, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628849934, "dur":1094, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628851034, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628851046, "dur":14141, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628865310, "dur":49322, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628914636, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895628914645, "dur":9896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895628924596, "dur":354734, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629279336, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895629279350, "dur":2201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629281601, "dur":118703, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629400311, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895629400322, "dur":1718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629402097, "dur":294895, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629696996, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1664895629697004, "dur":12602, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1664895629709641, "dur":110081, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895627728778, "dur":332, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895627729110, "dur":5942, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895627735053, "dur":2224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1664895627737284, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895627739758, "dur":327081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1664895628066898, "dur":107356, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628174262, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628174274, "dur":26725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628201057, "dur":41144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628242208, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628242219, "dur":4540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628246814, "dur":60235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628307056, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628307068, "dur":13216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628320339, "dur":50879, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628371224, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628371236, "dur":3414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628374729, "dur":119346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628494082, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628494093, "dur":8538, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628502701, "dur":24970, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628527677, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628527690, "dur":15171, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628542923, "dur":54303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628597233, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628597246, "dur":1450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628598749, "dur":70920, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628669674, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628669685, "dur":1263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628671014, "dur":75193, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628746213, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628746225, "dur":1240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628747524, "dur":109875, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628857452, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628857471, "dur":9317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628866849, "dur":24459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628891315, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628891327, "dur":8832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628900208, "dur":1111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628901324, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628901336, "dur":1143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628902530, "dur":80629, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628983164, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895628983175, "dur":15406, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Poly2Tri.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895628998642, "dur":184766, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629183413, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629183425, "dur":10718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629194194, "dur":188692, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629382891, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629382904, "dur":7551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629390506, "dur":55017, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629445529, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629445541, "dur":7939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":7, "ts":1664895629453530, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":7, "ts":1664895629453683, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629454162, "dur":1191, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":7, "ts":1664895629455406, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629455458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629455467, "dur":8849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629464376, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1664895629464536, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629464545, "dur":1034, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":7, "ts":1664895629465628, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629465677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629465687, "dur":7163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629472898, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1664895629472945, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629472977, "dur":1263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1664895629474293, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629474347, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629474359, "dur":2308, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1664895629476721, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1664895629476785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629476798, "dur":6977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":7, "ts":1664895629483821, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1664895629483960, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1664895629483968, "dur":14622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/boot.config" }}
+,{ "pid":12345, "tid":7, "ts":1664895629498636, "dur":321098, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627728888, "dur":229, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627729117, "dur":5888, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627735005, "dur":17337, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1664895627752346, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627752503, "dur":2245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1664895627754810, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1664895627754937, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627755017, "dur":9799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1664895627764881, "dur":18215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1664895627783103, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627783143, "dur":96220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1664895627879421, "dur":61561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895627940988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627941329, "dur":1571, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895627942967, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":8, "ts":1664895627943101, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895627950195, "dur":34869, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":8, "ts":1664895627985118, "dur":56032, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628041153, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628041222, "dur":2241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628043522, "dur":107359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628150887, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628150899, "dur":1808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628152758, "dur":73303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628226067, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628226080, "dur":6512, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628232644, "dur":119399, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628352049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628352060, "dur":38273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628390398, "dur":53969, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628444373, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628444385, "dur":1944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628446382, "dur":37016, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628483404, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628483414, "dur":1499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628484973, "dur":30262, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628515241, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628515253, "dur":4677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628519984, "dur":20265, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628540256, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628540265, "dur":3763, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628544093, "dur":37787, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628581886, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628581898, "dur":4526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628586477, "dur":27355, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628613838, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628613851, "dur":8371, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628622271, "dur":45992, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628668268, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628668280, "dur":1376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628669714, "dur":33381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628703209, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628703222, "dur":1750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628705028, "dur":194539, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628899587, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628899600, "dur":1196, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628900845, "dur":44666, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628945517, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895628945528, "dur":9977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Unity.ProBuilder.Stl.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895628955555, "dur":291545, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629247106, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629247117, "dur":3737, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629250902, "dur":51229, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629302137, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629302149, "dur":1170, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629303369, "dur":143946, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629447325, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629447337, "dur":7394, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":8, "ts":1664895629454796, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1664895629454880, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629454938, "dur":1516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":8, "ts":1664895629456505, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1664895629456557, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629456566, "dur":8373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":8, "ts":1664895629464986, "dur":9429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1664895629474420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629474428, "dur":1851, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":8, "ts":1664895629476333, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1664895629476381, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629476390, "dur":6999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/level0" }}
+,{ "pid":12345, "tid":8, "ts":1664895629483445, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1664895629483545, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1664895629483554, "dur":14680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/patra/OneDrive/Desktop/MYFOLDEROFSTUFF/Robots3DBuild/Worms3DLike_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1664895629498283, "dur":321437, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1664895629826988, "dur":2851, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1664895629865215, "dur": 997, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1664895629863298, "dur": 2935, "ph": "X", "name": "Write chrome-trace events", "args": {} },
